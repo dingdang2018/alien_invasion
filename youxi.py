@@ -10,6 +10,7 @@ feichuan_rect.centerx = 270
 
 print(feichuan_rect)
 
-screen.blit(feichuan_image, feichuan_rect)
+while True:
+    screen.blit(feichuan_image, feichuan_rect)
 
-pygame.display.flip()
+    pygame.display.flip()
