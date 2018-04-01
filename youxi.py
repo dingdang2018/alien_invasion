@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 pygame.init()
 
@@ -11,6 +12,10 @@ feichuan_rect.centerx = 270
 print(feichuan_rect)
 
 while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
+
     screen.blit(feichuan_image, feichuan_rect)
 
     pygame.display.flip()
